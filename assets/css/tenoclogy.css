@@ -24,3 +24,29 @@ li.nav-item a.nav-link {
   transition: color 0.3s ease;
 }
 
+.intro-text {
+  font-size: 1.2em !important;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  color: #333 !important;
+}
+
+.intro-author {
+  font-size: 1.5em !important;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #08252a;
+}
+
+h2.about-title {
+  font-size: 3em !important;
+  font-weight: 900 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nice-styling {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
