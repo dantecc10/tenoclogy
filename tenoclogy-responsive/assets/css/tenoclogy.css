@@ -8,11 +8,11 @@
   padding-bottom: 0px !important;
 }
 
-h2.banner-philosophy {
+h2.banner-philosophy, h1.banner-philosophy, .banner-philosophy {
   font-size: 2.5em !important;
   font-weight: 900 !important;
   font-family: 'Montserrat', sans-serif;
-  min-height: 6em;
+  /*min-height: 6em;*/
 }
 
 li.nav-item a.nav-link, li.nav-item a.nav-link.active {
@@ -48,5 +48,14 @@ h2.about-title {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
+}
+
+.main-color {
+  color: #00b3ff !important;
+}
+
+.card-body.rounded-5 {
+  border: solid rgba(0,179,255,0.6) 1px;
+  box-shadow: 5px 5px 20px #00b3ff !important;
 }
 
