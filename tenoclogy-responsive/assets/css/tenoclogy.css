@@ -59,3 +59,15 @@ h2.about-title {
   box-shadow: 5px 5px 20px #00b3ff !important;
 }
 
+submain-color {
+  color: #98DBFF !important;
+}
+
+.submain-color {
+  color: #98dbff !important;
+}
+
+.reduce {
+  font-weight: bold !important;
+}
+
