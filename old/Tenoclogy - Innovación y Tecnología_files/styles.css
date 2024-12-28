@@ -1,0 +1,281 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.3), rgba(255, 255, 255, 0.7));
+  }
+
+  header {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    margin-left: 20px;
+    max-width: 180px;
+    height: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #00796b;
+  }
+
+  .banner {
+    position: relative;
+    height: 80vh;
+    background-image: url('./images/Banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+  }
+
+  .banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none;
+  }
+
+  .banner-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-philosophy {
+    padding: 20px;
+    text-align: left;
+    max-width: 60%;
+  }
+
+  .banner-philosophy h2 {
+    font-size: 4.5em;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #08252a;
+    overflow: hidden;
+    white-space: normal;
+    min-height: 6em;
+  }
+
+  .author {
+    font-size: 1.5em;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: #08252a;
+    text-align: left;
+    margin-top: -20px;
+  }
+
+  .intro-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent;
+  }
+
+  .intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .intro-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .intro-author {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #08252a;
+  }
+
+  .mision-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent;
+  }
+
+  .mision-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .mision-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .mision-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+
+  .vision-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent;
+  }
+
+  .vision-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .vision-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .vision-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+
+  .filosofia-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent;
+  }
+
+  .filosofia-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .filosofia-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .filosofia-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+
+  .banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .banner p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #00796b;
+  }
+
+  section {
+    padding: 40px;
+    background: transparent;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    section {
+      padding: 20px;
+    }
+  }
+</style>
