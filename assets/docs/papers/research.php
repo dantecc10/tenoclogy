@@ -15,10 +15,9 @@ if (isset($_GET['id'])) {
 			header("Location: ../../");
 			exit;
 			break;
-
-			header("Location: " . $url . ")");
-			exit;
 	}
+	header("Location: " . $url . ")");
+	exit;
 } else {
 	header("Location: " . $url . ")");
 	exit;
