@@ -13,7 +13,6 @@ if (isset($_GET['id'])) {
 			break;
 		default:
 			header("Location: ../../");
-			exit;
 			break;
 	}
 	header("Location: " . $url . ")");
